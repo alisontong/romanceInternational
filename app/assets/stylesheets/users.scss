@@ -3,14 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #image{
 	width: 200px;
-	height: 220px;
-	margin: 0%
+	height: 250px;
+	margin: 10%
 };
 
 #image2{
 	width: 500px;
 	height: 700px;
-	margin: 0%
+	margin: 5%
 };
 
 .profile-box {
@@ -21,4 +21,21 @@
 	-webkit-box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
 	-moz-box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
 	box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
-}
+};
+
+.pic1 {
+	width: 600px;
+	height: 500px;
+	margin: 10%
+};
+
+.box {
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px #1f1f1f;
+	margin-top: 30px;
+	-webkit-box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
+	-moz-box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
+	box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
+};
+

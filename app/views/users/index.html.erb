@@ -1,12 +1,12 @@
 <div class="allprofile">
  <div class="container">
  	<div class="row">
-	<div class="col-xs-4 first">
+	<div class="col-xs-3 first">
 		<div class="thumbnail">
 	     <% count = 1 %>
 	     <% @users.each do |user| %>
-		  <% if count % 3 == 1 %>
-			<h2><%= user.username %></h2>
+		  <% if count % 4 == 1 %>
+			<h3><%= user.username %></h3>
 				<p><%= user.age %></p>
 				<p><%= user.gender %></p> 
 				<div><img src="<%= user.image_url %>" id="image"></div>
@@ -18,13 +18,13 @@
 	</div>
    </div>
 
-	<div class="col-xs-4 second">
+	<div class="col-xs-3 second">
 	  <div class="thumbnail">
 	<% count = 1 %>
 	<% @users.each do |user| %>
-		<% if count % 3 == 2 %>
+		<% if count % 4 == 2 %>
 		
-				<h2><%= user.username %></h2>
+				<h3><%= user.username %></h3>
 				<p><%= user.age %></p>
 				<p><%= user.gender %></p> 
 				<div><img src="<%= user.image_url %>" id="image"></div>
@@ -37,12 +37,12 @@
 	</div>
    </div>
 
-	<div class="col-xs-4 third">
+	<div class="col-xs-3 third">
 		<div class="thumbnail">
 	     <% count = 1 %>
 	     <% @users.each do |user| %>
-		<% if count % 3 == 0 %>
-				<h2><%= user.username %></h2>
+		<% if count % 4 == 3 %>
+				<h3><%= user.username %></h3>
 				<p><%= user.age %></p>
 				<p><%= user.gender %></p> 
 				<div><img src="<%= user.image_url %>" id="image"></div>
@@ -54,6 +54,25 @@
 	   <% count += 1 %>
 	  <% end %>	
     </div>
+   </div>
+
+   	<div class="col-xs-3 second">
+	  <div class="thumbnail">
+	<% count = 1 %>
+	<% @users.each do |user| %>
+		<% if count % 4 == 0 %>
+		
+				<h3><%= user.username %></h3>
+				<p><%= user.age %></p>
+				<p><%= user.gender %></p> 
+				<div><img src="<%= user.image_url %>" id="image"></div>
+				<p><%= link_to 'Show Profile', user_path(user) %></p>
+                
+        
+		<% end %>
+	  <% count += 1 %>
+	<% end %>	
+	</div>
    </div>
   </div>
 </div>
