@@ -1,0 +1,20 @@
+<div class="loginpage">
+<div class="container">
+  <div class="row login-form">
+<div class="col-sm-4 col-sm-offset-4">
+  <div class="loginbox">
+			<%= form_for :user do |f| %>
+  		  <% flash.each do |name, msg| %>
+  				<%= content_tag :div, msg, class: "alert #{name == 'error' ? 'alert-danger' : 'alert-info'}" %> 
+				<% end %>
+				<%= f.text_field :username, placeholder: "Username", class: "form-control", autofocus: :true %><br>
+				<%= f.password_field :password, placeholder: "Password", class: "form-control" %><br>
+				<%= f.submit "Submit", class: "btn btn-primary" %>
+			<% end %>
+  	</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+

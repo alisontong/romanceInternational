@@ -1,0 +1,24 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#image{
+	width: 200px;
+	height: 220px;
+	margin: 0%
+};
+
+#image2{
+	width: 500px;
+	height: 700px;
+	margin: 0%
+};
+
+.profile-box {
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px #1f1f1f;
+	margin-top: 30px;
+	-webkit-box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
+	-moz-box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
+	box-shadow: 0px 2px 9px -1px rgba(195,195,195,.8);
+}

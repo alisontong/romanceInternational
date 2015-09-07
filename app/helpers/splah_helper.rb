@@ -1,0 +1,2 @@
+module SplahHelper
+end
